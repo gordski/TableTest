@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+    <title>Table Test</title>
+  </head>
+  <body>
+    <form id="the_form">
+      <label>aValue</label><input type="textbox" id="aValue"></input><br>
+      <label>bValue</label><input tpye="textbox" id="bValue"></input><br>
+    </form>
+    <p>List:</p>
+    <table id="the_table">
+      <thead>
+        <tr><th>Val1</th><th>Val2</th><th>Val3</th><th/><th/><th/></tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <button onclick="doSave()">Save</button>
+
+    <!-- Edit dialog, hidden at page load. -->
+    <div id="edit_dialog" title="Edit">
+      <label>Val1</label><input type="textbox" id="edit_val1"></input><br>
+      <label>Val2</label><input type="textbox" id="edit_val2"></input><br>
+      <label>Val3</label><input type="textbox" id="edit_val3"></input><br>
+    </div>
+  </body>
+</html>
